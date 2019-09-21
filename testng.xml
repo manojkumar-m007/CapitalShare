@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CapitalShare">
+	<listeners>
+		<listener class-name="com.capitalshare.utilites.Reporting" />
+	</listeners>
+	<test name="StockExchangeWeb Test">
+		<parameter name="browsers" value="firefox" />
+		<classes>
+			<class name="com.capitalshare.testScripts.TC_LoginTest_001" />
+			<!-- <class name="com.capitalshare.testScripts.TC_Login_002" /> -->
+		</classes>
+	</test>
+</suite>
